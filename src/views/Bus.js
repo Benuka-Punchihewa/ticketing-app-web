@@ -20,6 +20,7 @@ const Bus = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [refresh, setRefresh] = useState(false);
 
+  // submit bus data
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -40,6 +41,7 @@ const Bus = () => {
     setLoading(false);
   };
 
+  //clear all data
   const handleClear = () => {
     setInputs(bus);
   };

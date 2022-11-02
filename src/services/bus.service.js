@@ -1,6 +1,7 @@
 import { getApi } from "../utils/axios";
 import { buildResponse } from "../utils/responseBuilder";
 
+//api call for create bus
 export const createBus = async (data) => {
   const response = await getApi()
     .post("/buses", data)

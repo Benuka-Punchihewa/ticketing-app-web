@@ -1,7 +1,4 @@
 import React from "react";
-import SearchBar from "../components/common/SearchBar";
-import AddButton from "../components/common/AddButton";
-// import ReportButton from "../components/common/ReportButton";
 import { Box, Grid, Typography } from "@mui/material";
 import BarChart from "../components/common/BarChart";
 import PieChart from "../components/common/PieChart";
@@ -14,7 +11,6 @@ import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
 import colors from "../assets/styles/colors";
 
 const Dashboard = () => {
-  const handleSearch = (input) => {};
   return (
     <React.Fragment>
       <Typography variant="h4" fontWeight="bold" sx={{ mb: 2 }}>

@@ -1,6 +1,8 @@
+//bus model
+
 const bus = {
-  _id: "AA-1111",
-  driver: "Sumedha",
+  _id: "",
+  driver: "",
 };
 
 export default bus;

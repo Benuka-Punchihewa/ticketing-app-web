@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/common/NavBar";
 import Sidebar from "./components/common/Sidebar";
 
+//views
 import Dashboard from "./views/Dashboard";
 import Bus from "./views/Bus";
 import SignIn from "./views/SignIn";
