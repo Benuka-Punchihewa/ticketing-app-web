@@ -1,3 +1,5 @@
+// colors for interfaces
+
 const colors = {
   primary: "#124559",
   white: "#EFF6E0",

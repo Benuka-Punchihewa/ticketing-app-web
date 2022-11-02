@@ -20,6 +20,7 @@ const SignIn = () => {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
+  //login sign in submit function
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);

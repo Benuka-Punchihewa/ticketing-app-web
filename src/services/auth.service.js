@@ -1,6 +1,7 @@
 import { getApi } from "../utils/axios";
 import { buildResponse } from "../utils/responseBuilder";
 
+//api call for login
 export const signIn = async (data) => {
   const response = await getApi()
     .post("/auth/login", data)

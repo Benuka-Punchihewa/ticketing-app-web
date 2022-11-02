@@ -1,3 +1,5 @@
+//common styles
+
 const commonStyles = {
   bodyContainer: {
     px: 8,
