@@ -9,7 +9,9 @@ import {
   ListItemText,
 } from "@mui/material";
 import { Stack, Typography } from "@mui/material";
+
 import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
+import AltRouteIcon from "@mui/icons-material/AltRoute";
 
 import colors from "../../assets/styles/colors";
 
@@ -68,11 +70,11 @@ const Sidebar = () => {
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="#simple-list">
+              <ListItemButton component="a" href="/transit-routes">
                 <ListItemIcon sx={{ display: { color: colors.white } }}>
-                  {/* <Medication /> */}
+                  <AltRouteIcon />
                 </ListItemIcon>
-                <ListItemText primary="Item" />
+                <ListItemText primary=" Transit Routes" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
