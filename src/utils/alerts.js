@@ -1,6 +1,8 @@
 import Swal from "sweetalert2";
 import colors from "../assets/styles/colors";
 
+//pop alert
+
 export const popAlert = (title, text, icon, confirmButtonText) => {
   return Swal.fire({
     title: title,

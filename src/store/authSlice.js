@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// redux slice to persist auth states
 const authSlice = createSlice({
   name: "auth",
   initialState: {
