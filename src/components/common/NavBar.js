@@ -1,7 +1,6 @@
 import { Mail, Notifications } from "@mui/icons-material";
 import { Avatar, Badge, Box, Menu, MenuItem, styled } from "@mui/material";
 import React, { useState } from "react";
-import colors from "../../assets/styles/colors";
 
 export const IconsWrapper = styled(Box)(({ theme }) => ({
   alignItems: "center",

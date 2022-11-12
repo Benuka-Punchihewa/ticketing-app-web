@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import TableAction from "../components/common/TableActions";
 import ReusableTable from "../components/common/ReusableTable";
 import { getTransitRoute } from "../services/route.service";
@@ -76,9 +76,29 @@ const TransitRoutes = () => {
 
   return (
     <React.Fragment>
-      <Typography variant="h4" fontWeight="bold" sx={{ mb: 2 }}>
-        Transit Routes
-      </Typography>
+      <Grid container marginBottom={3}>
+        <Grid item xs={6} display={"flex"} alignItems={"center"}>
+          <Typography variant="h4" fontWeight="bold">
+            Transit Routes
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"flex-end"}
+        >
+          <Button
+            type="submit"
+            variant="contained"
+            onClick={() => navigate("/add-transit-route")}
+          >
+            Create Route
+          </Button>
+        </Grid>
+      </Grid>
+
       {tableData.length > 0 && (
         <ReusableTable rows={tableData} columns={tableColumns} />
       )}

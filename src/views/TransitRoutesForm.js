@@ -106,6 +106,8 @@ const TransitRoutesForm = () => {
     }
 
     setTableData(tableDataArr);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stops]);
 
   return (
