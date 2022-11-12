@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Typography } from "@mui/material";
-import TableAction from "../components/common/TableActions";
 import ReusableTable from "../components/common/ReusableTable";
-import { getRouteById, getTransitRoute } from "../services/route.service";
-import { useNavigate, useParams } from "react-router-dom";
+import { getRouteById } from "../services/route.service";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 // TODO: Add Comments
