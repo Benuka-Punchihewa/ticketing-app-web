@@ -11,6 +11,8 @@ import Dashboard from "./views/Dashboard";
 import Bus from "./views/Bus";
 import SignIn from "./views/SignIn";
 import TransitRoutesForm from "./views/TransitRoutesForm";
+import TransitRoutes from "./views/TransitRoutes";
+import Stops from "./views/Stops";
 
 const App = () => {
   if (!window.location.href.includes("auth")) {
@@ -35,6 +37,8 @@ const App = () => {
                       path="/add-transit-route"
                       element={<TransitRoutesForm />}
                     />
+                    <Route path="/transit-routes" element={<TransitRoutes />} />
+                    <Route path="/stops/:id" element={<Stops />} />
                   </Routes>
                 </BrowserRouter>
               </Grid>
